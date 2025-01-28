@@ -69,7 +69,7 @@ function CartPage() {
             
           </div>
         ) : (
-          <div className="border-2 flex justify-center flex-col items-center w-96  ">
+          <div className="border-2 flex justify-center flex-col items-center w-52  ">
             <img src="https://as2.ftcdn.net/v2/jpg/02/38/57/71/1000_F_238577130_VIOFThdkVVqg6qE97Vg8QFHsniA2PpGk.jpg" alt="" />
             <h1>Cart is Empty <NavLink className="text-red-600  underline" to='/menu'>Shop Now</NavLink></h1>
           </div>

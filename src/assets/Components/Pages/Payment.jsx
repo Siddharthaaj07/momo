@@ -77,14 +77,14 @@ var hash = CryptoJS.HmacSHA256(Message,"8gBm/:&EnhH.1/q");
             type="hidden"
             id="success_url"
             name="success_url"
-            value="http://localhost:5173/success"
+            value="https:/momo-flax.vercel.app/success"
             required
           />
           <input
             type="hidden"
             id="failure_url"
             name="failure_url"
-            value="http://localhost:5173/Failed"
+            value="https:/momo-flax.vercel.app/Failed"
             required
           />
           <input

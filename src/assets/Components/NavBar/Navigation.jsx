@@ -29,32 +29,16 @@ function Navigation() {
           Momo
         </NavLink>
       </div>
-      <div className=" flex text-slate-500  px-5 gap-x-5   ">
-        <NavLink to="/about">About Us</NavLink>
+      <div className=" flex text-slate-500  px-5 gap-x-5 font-bold   ">
+
+       
+        <NavLink className="hover:bg" to="/about">About Us</NavLink>
         <NavLink to="/menu">Our Menu</NavLink>
         <NavLink to="/services">Our Services</NavLink>
         <NavLink to="/allergyAdvice">Allergy Advice</NavLink>
-        {isAuthenticated ? (
-          <NavLink
-            onClick={() => {
-              logout();
-            }}
-          >
-            LogOut
-          </NavLink>
-        ) : (
-          <div>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/signUp">SignUP</NavLink>
-          </div>
-        )}
-        {/* <NavLink to="/signUp">SignUP</NavLink> */}
-        
-
-
-
-
-
+       </div>
+       
+       <div>
         <NavLink className=" relative  flex  " to="/cartPage">
           <span>
             <FaCartPlus size={20} />
@@ -90,9 +74,11 @@ function Navigation() {
             LogOut
           </NavLink>
         ) : (
-          <div>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/signUp">SignUP</NavLink>
+          <div className="flex text-slate-500  px-5 gap-x-5  ">
+            <NavLink className="text-blue-800 border-2 h-8 w-24 text-center
+             flex justify-center font-bold bg-slate-300  hover:bg-slate-950 " to="/login">Login</NavLink>
+            <NavLink className="text-blue-800 border-2 h-8 w-24 text-center 
+            flex justify-center font-bold bg-slate-300 hover:bg-slate-950 " to="/signUp">SignUP</NavLink>
           </div>
         )}
         {isAuthenticated ? <NavLink to="/profile"><img

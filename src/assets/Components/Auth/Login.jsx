@@ -15,7 +15,8 @@ function Login(){
 
    
       <div className="">
-        <form class="w-96 shadow-md shadow-orange-400 space-y-3 flex flex-col border-2 border-black m-auto mt-16">
+        <form class="w-96 shadow-md shadow-orange-400 space-y-3 flex flex-col border-2
+         border-black m-auto mt-16">
        <label className='border-b-2 w-10 border-black' htmlFor="email">Email</label>
        <input  type="email" placeholder="Enter your Email" />
 

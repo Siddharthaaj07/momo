@@ -70,4 +70,4 @@ items-center justify-center">#One</span> </h1>
   )
 }
 
-export default Home
+export default Home;
