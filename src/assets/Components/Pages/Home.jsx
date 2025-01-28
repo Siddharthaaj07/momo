@@ -6,8 +6,8 @@ import gat from '../../images/get.jpg'
 
 function Home() {
   return (
-    <div className="border-2 border-red-800 w-full  overflow-x-hidden">
-      <div className="border-2 border-black h-40 bg-black shodow-lg">
+    <div className=" w-full  overflow-x-hidden">
+      <div className="border-2  bg-red-400 border-black h-40 shodow-lg">
         <h1 className="text-white font-bold text-6xl mt-9 pl-10">HOME</h1>
       </div><br />
 
