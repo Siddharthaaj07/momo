@@ -66,36 +66,38 @@ function CartPage() {
                 );
               })}
             </div>
-            
+
           </div>
         ) : (
-          <div className="border-2 flex justify-center flex-col items-center w-52  ">
+          <div className="border-2 flex justify-center flex-col items-center w-96  ">
             <img src="https://as2.ftcdn.net/v2/jpg/02/38/57/71/1000_F_238577130_VIOFThdkVVqg6qE97Vg8QFHsniA2PpGk.jpg" alt="" />
             <h1>Cart is Empty <NavLink className="text-red-600  underline" to='/menu'>Shop Now</NavLink></h1>
           </div>
         )}
       </div>
-      {CartItems.length > 0  &&(
-        <div className="border-2 shadow shadow-slate-500 h-80 ml-8  rounded-lg w-[25%]  ">
-        <p>Order Summary</p>
-        <p>Total Price Rs.{totalAmount} </p>
-        <div>
-          <NavLink to='/payment' state={[...CartItems]}>
-        <button className="bg-black text-white rounded p-2 w-52 " >
-            Proceed to Checkout  ({totalItems})
-            </button>
+      {CartItems.length > 0 && (
+        <div className="border-2 shadow shadow-slate-500 h-80 ml-8  rounded-lg w-[25%] gap-28 text-center  ">
+          <p className="text-2xl font-bold">Order Summary</p>
+          <p className="text-2xl font-bold">Total Price Rs.{totalAmount} </p>
+          <div>
+            <NavLink to='/payment' state={[...CartItems]}>
+              <button className="bg-black text-white rounded p-2  gap-10 mt-3 font-bold text-3xl " >
+                Proceed to Checkout  ({totalItems})
+              </button>
             </NavLink>
+          </div>
+          <div className="border-2 border-black text-center  p-2 justify-center font-bold items-center
+            bg-red-500 rounded-md text-white text-xl mt-10"> 
+            <button
+              onClick={() => {
+                dispatch({ type: "EmptyCart", payload: { id:item.id} })
 
-          <button
-            onClick={() => {
-              dispatch({ type: "EmptyCart", payload: { id: item.id } })
-
-            }}
-            className="bg-red-500 rounded-md text-white text-xl">Clear Cart</button>
+              }}
+              >Clear Cart</button>
+          </div>
         </div>
-      </div>
       )}
-      
+
     </div>
   );
 }
