@@ -236,33 +236,33 @@ function Home() {
         {/* this is after the video */}
 
         <div className=" flex justify-center items-center gap-40 mt-60">
-          <div className=" border-2 shadow-md shadow-orange-400 border-black 
+          <div className=" border-2 shadow-md shadow-orange-400
           items-center justify-center text-center h-60 w-64">
             <img
               src={quality}
               alt="qualityFood"
-              className="items-center justify-center  h-24 text-center"
+              className="items-center justify-center  h-24 text-center ml-20"
             />
 
             <h1 className="mt-8 font-bold">Quality Food</h1>
             <p>Only the best food with top quality products and ingredients</p>
           </div>
-          <div className=" border-2 shadow-md shadow-orange-400 border-black 
+          <div className=" border-2 shadow-md shadow-orange-400
           items-center justify-center text-center h-60 w-64">
             <img
               src={party}
               alt="party_img"
-              className="items-center justify-center  h-24 text-center"
+              className="items-center justify-center  h-24 text-center ml-24"
             />
             <h1 className="mt-8 font-bold">Private Party</h1>
             <p>Get the best food for all your private parties and gatherings</p>
           </div>
-          <div className=" border-2 shadow-md shadow-orange-400 border-black 
+          <div className=" border-2 shadow-md shadow-orange-400
           items-center justify-center text-center h-60 w-64">
             <img
               src={categring}
               alt="chefCap_img"
-              className="items-center justify-center  h-24 text-center"
+              className="items-center justify-center  h-24 text-center ml-24"
             />
             <h1 className="mt-8 font-bold">Categring</h1>
             <p>Get the best food for any occasions and gatherings</p>
@@ -297,7 +297,7 @@ function Home() {
             </div>
           </div>
 
-          <div className=" ml-44 mt-5 mb-10">
+          <div className=" ml-96 mt-10 mb-32">
             <img
               src={girl2}
               alt="girl"
@@ -310,14 +310,12 @@ function Home() {
 
       <div className="  w-[60%] p-8 mr-28 boeder-2 border-blue-600">
 
-
-
-
         <div className="p-8 mr-28 items-center justify-center text-center ">
 
           <h1 className="text-4xl font-bold ml-5 mt-5 ">Get <span className="text-orange-600">In toush</span></h1>
           <p className="font-bold text-2xl text-blue-950 ml-5 mt-5">Our Friendly team would love to hear from you</p>
-
+</div>
+<div>
 
           <div className=" shadow-sm w-[100%] h-[100%] ml-4 ">
 
