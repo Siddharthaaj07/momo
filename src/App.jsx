@@ -38,6 +38,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/failed" element={<Failed />} />
         <Route path="/cartpage" element={<CartPage />} />
+        <Route path="*" element={<Home />} />
 
 
       </Routes>
