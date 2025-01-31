@@ -48,7 +48,7 @@ function ProductDescription() {
                             <div className="flex items-center justify-end gap-4 mr-28 p-3 mt-16">
                                 <button className="w-52 h-10 bg-red-500 shadow-lg text-white rounded-sm font-bold ">Buy NOw</button>
                                 <button onClick={()=>{
-                                    dispatch({type:"AddToCart",payload:{...singleProduct}})
+                                    dispatch({type:"ADD_TO_CART",payload:{...singleProduct}})
                                 }}
                                 className="bg-orange-500 text-white w-52 h-10 rounded-sm shadow-xl font-bold hover:bg-orange-60">Add To Cart</button>
                             </div>

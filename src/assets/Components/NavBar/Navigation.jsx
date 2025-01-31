@@ -18,7 +18,7 @@ function Navigation() {
 
   const { state } = useContext(CartContext);
   const totalItems = state.CartItems.reduce((acc, item) => {
-    return acc + item.qty;
+    return acc + item.qty ;
   }, 0);
 
   return (
